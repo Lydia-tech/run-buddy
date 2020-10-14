@@ -270,3 +270,290 @@ section {
   color: #fce138;
   
 }
+/* REACH OUT STYLES START */
+.contact {
+  text-align: center;
+  background: #024e76;
+}
+.contact h2 {
+
+  color: #39a6b2;
+}
+.contact-info iframe {
+  width: 400px;
+  height: 400px;
+}
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
+}
+.contact-info h3 {
+{
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-size: 16px;
+  font-style: normal;
+}
+.contact-info a {
+  color: #fce138;
+}
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+/* REACH OUT STYLES END */
+.privacy-policy {
+  color: #fce138;
+  color: #fce138; 
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+header h1 {
+  width: 100%;
+    text-align: center;
+}
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+footer h2, footer div {
+  text-align: center;
+  width: 100%;
+}
+.hero-cta, .hero-form {
+  width: 100%
+}
+.hero-cta {
+  text-align: center;
+}
+.section-title {
+  width: 80%;
+}
+
+.trainer {
+  flex: 0 70%;
+}
+
+.contact-info iframe{
+  flex: 1 100%;
+}
+.service-grid-container {
+  background: lightyellow;
+  width: 80%;
+  display: grid;
+  /* repeat(iterator, size) */
+  grid-template-columns: 1fr repeat(2, 4fr);
+  grid-template-rows: repeat(5, 1fr) 2fr;
+  border: 2px solid #024e76;
+  color:  #024e76;
+  font-size: 1.2rem;
+  
+}
+/* SERVICE STYLES BEGIN */
+.services {
+  background: #fce138; 
+}
+
+.service-grid-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.service-grid-item {
+  padding: 15px 0;
+  border: 2px solid #024e76;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}  
+/* specific match */
+.service-grid-item.basic {
+  grid-column: 2 / span 1;
+}
+.service-grid-item.both {
+  grid-column: 2 / span 2;
+}
+.service-grid-item.cancel {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.grid-container {
+}
+.box1 {
+  grid-column: 1/ span 1; 
+  grid-row: 1/ span 2; 
+
+}
+.grid-head, .grid-price, .service-grid-item.cancel {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.box2 {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+.box3 {
+  grid-column: 2/ span 2;
+  grid-row: 3/ span 1; 
+}
+
+/* this will be applied on any smaller than 980px */
+@media screen and (max-width: 980px) {
+  .header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  .header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header nav ul li a {
+    font-size: 20px;
+  }
+
+  .footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  .section-title {
+    width: 80%;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+
+.contact-info iframe{
+  flex: 1 100%; 
+  }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+.service-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-grid-item.basic {
+    grid-column: 1;
+  }
+
+  .service-grid-item.both {
+    grid-column: 1 / -1;
+  }
+
+  .service-grid-item.cancel {
+    transform: none;
+    writing-mode: unset;
+    grid-column: 1 / -1;
+    grid-row: -1;
+  }
+  .section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+}
+
+  /* this will be applied on any screen between 768px and 575px */
+
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;  
+  }
+  .contact-form {
+    order: 3;
+  }
+}
